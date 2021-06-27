@@ -1,0 +1,10 @@
+@import "~bootstrap/scss/bootstrap";
+
+.ListGroup:hover{
+    cursor: pointer;
+}
+
+.ListGroup{
+    overflow: scroll;
+    height: 500px;
+}
