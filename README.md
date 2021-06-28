@@ -2,10 +2,10 @@
 
 ## Index
 
-- [Lab 31 , v1.1](./public/assets/labVersions/lab26.md)
-- [Lab 32 , v1.2](./public/assets/labVersions/lab27.md)
-- [Lab 33 , v1.3](./public/assets/labVersions/lab28.md)
-- [Lab 34 , v1.4](./public/assets/labVersions/lab29.md)
+- [Lab 31 , v1.1](./public/assets/labVersions/lab31.md)
+- [Lab 32 , v1.2](./public/assets/labVersions/lab32.md)
+- [Lab 33 , v1.3](./public/assets/labVersions/lab33.md)
+- [Lab 34 , v1.4](./public/assets/labVersions/lab34.md)
 - [To Do List Manager](#To-Do-List-Manager)
 
 ---
