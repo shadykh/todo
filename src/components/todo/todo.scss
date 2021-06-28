@@ -1,3 +1,4 @@
+@import "~bootstrap/scss/bootstrap";
 body, html {
     height: 100%;
     margin: auto;
@@ -98,4 +99,8 @@ body, html {
 }
 .none{
     display: none;
+}
+
+.toast-header {
+    justify-content: space-between;
 }
