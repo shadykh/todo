@@ -12,6 +12,7 @@
   - [Github](#Github)
   - [UML](#UML)
   - [App](#App)
+  - [Deployment link](https://todo401.netlify.app/)
 - [Author Links](#Author-Links)
 - [Back to main README](../../../README.md)
 - [Back to head or the repo](https://github.com/shadykh/todo)
@@ -151,7 +152,7 @@ The following user/developer stories detail the major functionality for this pha
 
 - #### UML
 
-  - ![UML](../uml_lab30.png)
+  - ![UML](../uml_lab31.png)
 
 **[⬆ Back to Index](#index)**
 
@@ -162,6 +163,7 @@ The following user/developer stories detail the major functionality for this pha
 - #### App
 
   - run `npm start`
+  - Deployment link 🌍: [todo](https://todo401.netlify.app/)
 
 - I did this lab with help of
   - dependencies
