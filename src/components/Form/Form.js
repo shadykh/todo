@@ -15,9 +15,10 @@ function TodoForm(props) {
   return (
 
     <>
+    <strong>To Do Item</strong>
+    <div  className='divOpt'>
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formGroupItem">
-          <Form.Label>To Do Item</Form.Label>
           <Form.Control name="task" type="text" placeholder="To Do Item" onChange={handleChange} />
         </Form.Group>
         <Form.Group controlId="formGroupAssigned">
@@ -28,20 +29,13 @@ function TodoForm(props) {
           <Form.Label>Due Date</Form.Label>
           <Form.Control name="dueDate" type="date" onChange={handleChange} />
         </Form.Group>
-        {/*         <Form.Group controlId="formBasicRange">
-          <Form.Label>Status</Form.Label>
-          <Form.Control name="status" type="date" onChange={handleInputChange} /> 
-          <Form.Control name="status" size="sm" as="select" onChange={handleInputChange}>
-            <option>Completed</option>
-            <option>Working on it</option>
-          </Form.Control>
-        </Form.Group> */}
         <Form.Group controlId="formBasicRange">
           <Form.Label>Difficulty Rating</Form.Label>
           <Form.Control name="difficulty" min="0" max="5" type="range" onChange={handleChange} />
         </Form.Group>
         <Button variant="outline-primary" type='submit'>Add Item</Button>
       </Form>
+      </div>
     </>
 
   )

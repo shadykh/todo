@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import TodoForm from '../Form/Form';
 import TodoList from '../List/List';
 import useAjax from '../custom-hooks/useAjax';
+import Settings from '../context/settings/settings.js';
 import './todo.scss';
 
 
@@ -33,6 +34,9 @@ const ToDo = () => {
             handleDelete={_deleteItem}
             handleComplete={_toggleComplete}
           />
+        </div>
+        <div>
+          <Settings />
         </div>
       </section>
     </>

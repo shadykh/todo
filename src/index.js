@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom';
 import App from './app.js';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-
+import SettingsContext from './components/context/settings/context.js'
 
 function Main() {
-  console.log('hi');
   return (
-      <App />
+    <SettingsContext>
+    <App />
+  </SettingsContext>
   )
 
 }
-console.log('hi');
-//const rootElement = document.getElementById('root');
+
 ReactDOM.render(
   <React.StrictMode>
     <Header/>
