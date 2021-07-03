@@ -5,7 +5,7 @@ const useForm = (callback) => {
     const [item, setItem] = useState({});
 
     const handleSubmit = (e) => {
-        e.persist();
+        //e.persist();
         e.preventDefault();
         e.target.reset();
 
@@ -22,6 +22,7 @@ const useForm = (callback) => {
     return [
         handleChange,
         handleSubmit,
+        item
     ]
 }
 

@@ -23,7 +23,11 @@ body, html {
     }
 
 }
-
+#toggleTask{
+    width: 60px;
+    font-size: 8px;
+    height: 32px;
+}
 .todo {
 
     display:flex;
@@ -104,4 +108,10 @@ body, html {
 
 .toast-header {
     justify-content: space-between;
+}
+
+.signForm{
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
 }
