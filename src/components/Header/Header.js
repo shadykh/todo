@@ -1,21 +1,22 @@
 import './header.scss'
 import React from 'react';
-import { Navbar, Nav} from "react-bootstrap"
+import { Navbar } from 'react-bootstrap';
+import { BrowserRouter as Router, Link} from "react-router-dom";
+import Login from '../../context/auth/signIn';
+import './header.scss'
+
 
 function Header() {
     return (
         <>
-            <header>
-                <h1>Todo List Manger</h1>
-                <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">CodeFellows</Navbar.Brand>
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#home">Detailed Task</Nav.Link>
-                        <Nav.Link href="#home">Help</Nav.Link>
-                    </Nav>
+            <Router>
+                <Navbar bg="primary" width='100%' variant="dark">
+                    <Link to="/">
+                        <Navbar.Brand>Todo List Manger</Navbar.Brand>
+                    </Link>
+                    <Login />
                 </Navbar>
-            </header>
+            </Router>
         </>
     );
 };

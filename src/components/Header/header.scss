@@ -21,3 +21,10 @@ nav {
     justify-content: center;
     text-align: center;
 }
+.bg-primary {
+    background-color: #007bff !important;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

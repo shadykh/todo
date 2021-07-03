@@ -1,13 +1,22 @@
-import React from 'react';
-//import ToDo from './components/todo/Todo';
-import ToDo from './components/todo/todo-connected';
-function App (){
+import React, { Suspense } from 'react';
+import ToDo from './components/todo/todo-connected.js';
+import Context from './context/settings/context.js';
+import LoginProvider from './context/auth/settings.js'
+import Header from './components/Header/Header';
+function App() {
 
-    return (
-      <>
-        <ToDo />
-      </>
-    );
+  return (
+    <>
+      <Context>
+        <LoginProvider>
+          <Header />
+          <Suspense fallback="loading...">
+            <ToDo />
+          </Suspense>
+        </LoginProvider>
+      </Context>
+    </>
+  );
 
 }
 

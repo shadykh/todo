@@ -1,18 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import TodoForm from '../Form/Form';
-import TodoList from '../List/List';
-import useAjax from '../custom-hooks/useAjax';
-import Settings from '../context/settings/settings.js';
+import React from 'react';
+import TodoForm from './Form';
+import TodoList from './List';
+import useAjax from './custom-hooks/useAjax';
+import Settings from '../../context/settings/settings';
 import './todo.scss';
 
 
-//const todoAPI = 'https://api-js401.herokuapp.com/api/v1/todo';
-const myOwnAPI = 'https://shady-api-server.herokuapp.com/api/favorite/todo';
+const API = 'https://shady-auth-api.herokuapp.com/api/v1/todo';
 
 
 const ToDo = () => {
 
-  const [_addItem, _toggleComplete, _deleteItem, list] = useAjax(myOwnAPI);
+  const [_addItem, _toggleComplete, _deleteItem, list] = useAjax(API);
 
   return (
     <>
